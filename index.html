@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springs Art Gallery</title>
+    <link rel="icon" type="image/png" href="New Project (2).png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <img src="logo.png" alt="Springs Art Gallery Logo" class="logo">
+        <div>
+            <h1>SPRINGS ART GALLERY</h1>
+            <p>2026/2027 Exhibition Programme Application.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Slideshow Section -->
+        <section class="slideshow-section">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="_MG_6354.jpg" style="width:100%" alt="Exhibition Art 1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="_MG_7212.jpg" style="width:100%" alt="Exhibition Art 2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="_MG_7219.jpg" style="width:100%" alt="Exhibition Art 3">
+                </div>
+                <div class="mySlides fade">
+                    <img src="gallery_bg.jpg" style="width:100%" alt="Exhibition Art 4">
+                </div>
+                <div class="mySlides fade">
+                    <img src="_MG_7139.jpg" style="width:100%" alt="Exhibition Art 5">
+                </div>
+                <div class="mySlides fade">
+                    <img src="_MG_6344.jpg" style="width:100%" alt="Exhibition Art 6">
+                </div>
+                
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <!-- Dots/indicators -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section class="downloads">
+            <h2>Documents</h2>
+            <div class="card-grid">
+                <a href="guidelines.pdf" class="download-card" download>
+                    <h3>Exhibition Guidelines</h3>
+                    <p>Review terms & Eligibility.</p>
+                    <span class="btn">Download PDF</span>
+                </a>
+                <a href="application_form.docx" class="download-card" download>
+                    <h3>Application Form</h3>
+                    <p>Download Fillable Form.</p>
+                    <span class="btn">Download Doc</span>
+                </a>
+                <a href="floor_plan.pdf" class="download-card" download>
+                    <h3>Gallery Floor Plan</h3>
+                    <p>SAG Venue layout details.</p>
+                    <span class="btn">Download PDF</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Art Gallery. All rights reserved.</p>
+        <p>For more information contact: <a href="mailto:Nkosinathi.Gumede@ekurhuleni.gov.za">Nkosinathi.Gumede@ekurhuleni.gov.za</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
