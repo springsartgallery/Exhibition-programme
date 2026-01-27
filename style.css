@@ -77,11 +77,41 @@ header p {
     border: 8px solid rgba(255,255,255,0.1);
     border-radius: 4px;
     overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-.mySlides { display: none; }
+/* Loading Spinner */
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid var(--accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1;
+    display: none;
+}
 
-img { vertical-align: middle; }
+.loading-spinner.active {
+    display: block;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.mySlides { 
+    display: none;
+}
+
+img { 
+    vertical-align: middle;
+}
 
 .fade {
     animation-name: fade;
@@ -142,6 +172,7 @@ img { vertical-align: middle; }
 /* Downloads section */
 .downloads {
     position: relative;
+    margin-top: 4rem;
 }
 
 .downloads h2 {

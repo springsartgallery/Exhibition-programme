@@ -1,6 +1,4 @@
 let slideIndex = 0;
-let slideTimer;
-
 showSlides();
 
 function showSlides() {
@@ -24,12 +22,11 @@ function showSlides() {
         dots[slideIndex-1].className += " active";
     }
     
-    slideTimer = setTimeout(showSlides, 4500); // Change image every 4.5 seconds
+    setTimeout(showSlides, 4500); // Change image every 4.5 seconds
 }
 
 // Next/previous controls
 function plusSlides(n) {
-    clearTimeout(slideTimer);
     slideIndex += n - 1;
     if (slideIndex < 0) {slideIndex = document.getElementsByClassName("mySlides").length - 1}
     if (slideIndex >= document.getElementsByClassName("mySlides").length) {slideIndex = 0}
@@ -38,7 +35,6 @@ function plusSlides(n) {
 
 // Thumbnail image controls
 function currentSlide(n) {
-    clearTimeout(slideTimer);
     slideIndex = n - 1;
     showSlides();
 }
