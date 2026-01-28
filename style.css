@@ -9,7 +9,7 @@ body {
     margin: 0;
     color: var(--white);
     /* Static Background */
-    background: url('background.jpg') no-repeat center center fixed;
+    background: url('background.JPG') no-repeat center center fixed;
     background-size: cover;
 }
 
